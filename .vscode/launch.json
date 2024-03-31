@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:feather-api-kit}",
+            "name": "Debug TestOpenAPIGenerator",
+            "program": "${workspaceFolder:feather-api-kit}/.build/debug/TestOpenAPIGenerator",
+            "preLaunchTask": "swift: Build Debug TestOpenAPIGenerator"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:feather-api-kit}",
+            "name": "Release TestOpenAPIGenerator",
+            "program": "${workspaceFolder:feather-api-kit}/.build/release/TestOpenAPIGenerator",
+            "preLaunchTask": "swift: Build Release TestOpenAPIGenerator"
+        }
+    ]
+}
