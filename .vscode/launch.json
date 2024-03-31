@@ -23,6 +23,30 @@
             "name": "Release TestOpenAPIGenerator",
             "program": "${workspaceFolder:feather-api-kit}/.build/release/TestOpenAPIGenerator",
             "preLaunchTask": "swift: Build Release TestOpenAPIGenerator"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:feather-api-kit}",
+            "name": "Debug TestAPIGenerator",
+            "program": "${workspaceFolder:feather-api-kit}/.build/debug/TestAPIGenerator",
+            "preLaunchTask": "swift: Build Debug TestAPIGenerator"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:feather-api-kit}",
+            "name": "Release TestAPIGenerator",
+            "program": "${workspaceFolder:feather-api-kit}/.build/release/TestAPIGenerator",
+            "preLaunchTask": "swift: Build Release TestAPIGenerator"
         }
     ]
 }
