@@ -50,5 +50,8 @@ jobs:
     #     key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
     #     restore-keys: ${{ runner.os }}-spm-
     
+    - name: Swift version
+      run: swift --version
+
     - name: Test
       run: swift test --parallel --enable-code-coverage
