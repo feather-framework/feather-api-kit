@@ -7,9 +7,9 @@
 
 import XCTest
 
-@testable import FeatherOpenAPIGeneratorKit
+@testable import FeatherAPIKit
 
-final class FeatherOpenAPIGeneratorKitTests: XCTestCase {
+final class FeatherAPIKitTests: XCTestCase {
 
     func testExample() async throws {
 

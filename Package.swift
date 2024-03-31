@@ -11,7 +11,7 @@ let package = Package(
         .visionOS(.v1),
     ],
     products: [
-        .library(name: "FeatherOpenAPIGeneratorKit", targets: ["FeatherOpenAPIGeneratorKit"]),
+        .library(name: "FeatherAPIKit", targets: ["FeatherAPIKit"]),
     ],
     dependencies: [
         .package(url: "https://github.com/feather-framework/feather-openapi-kit", .upToNextMinor(from: "0.9.0")),
@@ -19,7 +19,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "FeatherOpenAPIGeneratorKit",
+            name: "FeatherAPIKit",
             dependencies: [
                 .product(name: "FeatherOpenAPIKit", package: "feather-openapi-kit"),
                 .product(name: "FeatherOpenAPIKitMacros", package: "feather-openapi-kit"),
@@ -30,19 +30,19 @@ let package = Package(
         ),
 
         .executableTarget(
-            name: "TestOpenAPIGenerator",
+            name: "TestAPIGenerator",
             dependencies: [
                 .product(name: "Yams", package: "Yams"),
                 .product(name: "FeatherOpenAPIKit", package: "feather-openapi-kit"),
                 .product(name: "FeatherOpenAPIKitMacros", package: "feather-openapi-kit"),
-                .target(name: "FeatherOpenAPIGeneratorKit"),
+                .target(name: "FeatherAPIKit"),
             ]
         ),
         
         .testTarget(
-            name: "FeatherOpenAPIGeneratorKitTests",
+            name: "FeatherAPIKitTests",
             dependencies: [
-                .target(name: "FeatherOpenAPIGeneratorKit"),
+                .target(name: "FeatherAPIKit"),
             ]
         ),
     ]

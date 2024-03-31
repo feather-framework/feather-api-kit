@@ -1,4 +1,4 @@
-import FeatherOpenAPIKit
+import FeatherAPIKit
 import Foundation
 import Yams
 

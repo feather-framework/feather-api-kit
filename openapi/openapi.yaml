@@ -1,9 +1,9 @@
 openapi: 3.1.0
 info:
   title: Feather - Core API
-  description: 'The entire API definition for the Feather service.
+  description: 'The entire API definition for the Feather Core API service.
 
-    (Generated on: 31 Mar 2024 at 13:56:57)'
+    (Generated on: 31 Mar 2024 at 14:20:12)'
   contact:
     name: Binary Birds
     url: https://binarybirds.com
@@ -13,8 +13,6 @@ tags: []
 servers:
 - url: http://localhost:8080
   description: dev
-- url: http://localhost:8081
-  description: live
 components:
   schemas:
     FeatherCoreBadRequestError:

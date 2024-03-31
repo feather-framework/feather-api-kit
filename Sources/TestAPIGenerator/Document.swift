@@ -1,4 +1,4 @@
-import FeatherOpenAPIGeneratorKit
+import FeatherAPIKit
 import FeatherOpenAPIKit
 import Foundation
 import OpenAPIKit
