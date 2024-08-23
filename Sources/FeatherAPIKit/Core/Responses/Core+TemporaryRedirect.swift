@@ -13,5 +13,3 @@ extension Feather.Core.Responses {
         public static let description = "Temporary Redirect"
     }
 }
-
-
